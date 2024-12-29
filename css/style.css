@@ -198,6 +198,15 @@
     }
 }
 
+@media (max-width:551px) {
+    .main--section {
+        p {
+
+            font-size: 22px
+        }
+    }
+}
+
 /* end main section */
 
 /* start about Section */
@@ -322,6 +331,19 @@
 
 }
 
+.sd {
+    width: 300px;
+}
+
+@media (max-width:551px) {
+    .login--title {
+        font-size: 20px;
+    }
+
+    .sd {
+        width: auto;
+    }
+}
 
 
 /* end login page */
@@ -424,6 +446,39 @@ footer .social {
 
     a:hover {
         color: #8f4a24;
+    }
+}
+
+@media (max-width:520px) {
+    footer {
+        padding-top: 20px;
+    }
+
+    footer p {
+        font-size: 15px;
+        text-align: center;
+    }
+
+    footer div {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    footer .social {
+        display: flex;
+        flex-direction: row;
+
+        i {
+            font-size: 20px !important;
+        }
+    }
+
+    footer div div:last-child {
+        flex-direction: row;
+
+        a {
+            font-size: 15px;
+        }
     }
 }
 
