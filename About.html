@@ -92,17 +92,21 @@
             color: #008000;
             /* Green */
         }
+
+        .w-b {
+            color: #fdf6e1;
+            text-shadow: #000 1px 0 10px;
+        }
     </style>
 </head>
 
 <body>
 
+    <!-- Header -->
     <header>
         <nav class="navbar navbar-expand-lg bg-body-tertiary">
             <div class="container-fluid d-flex">
-                <a class="navbar-brand" href="./index.html"><i class="fa-solid fa-mug-saucer"></i>
-                    Palestine Cafe
-                </a>
+                <a class="navbar-brand" href="./index.html"><i class="fa-solid fa-mug-saucer"></i>Palestine Cafe</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                     aria-expanded="false" aria-label="Toggle navigation">
@@ -111,19 +115,34 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="./index.html">Home</a>
+                            <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link " href="./Menu.html">Menu</a>
+                            <a class="nav-link" href="./Menu.html">Menu</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" href="./About.html">About</a>
+                            <a class="nav-link" href="./About.html">About</a>
                         </li>
+
                         <li class="nav-item">
                             <a class="nav-link" href="./Book-Now.html">Book Now</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="./FAQ.html">FAQ</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Easy Recipes
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="./Drinks.html">Drinks</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="./Desserts.html">Desserts</a>
+                                </li>
+                            </ul>
                         </li>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
@@ -143,6 +162,7 @@
                                 <li class="nav-item">
                                     <a class="nav-link" href="#">Contact Us</a>
                                 </li>
+
                             </ul>
                         </li>
                         <li class="nav-item dropdown">
@@ -164,11 +184,12 @@
             </div>
         </nav>
     </header>
+
     <div class="container mb-10">
         <div class="row text-center pb-5 pt-3 mt-5 mb-2">
             <div class="col-md-12 text-center">
                 <div class="lc-block ">
-                    <h2 editable="inline" class="display-2 mb-0 text-center txt-white"><b>Our Team</b></h2>
+                    <h2 editable="inline" class="display-2 mb-0 text-center txt-white"><b class="w-b">Our Team</b></h2>
                     <div class="message">
                         <span class="red">We are</span> <span class="black">just a group of students</span> <br>
                         <span class="red"> who wanted</span> <span class="white">to remind people</span> <br>
@@ -221,10 +242,10 @@
                 <p>ID:2320628</p>
             </li>
             <li>
-                <img src="./assets/imgs/group/norhan-ashraf.jpg" alt="Norhan-Ashraf">
+                <img src="./assets/imgs/group/norhan-ashraf.jpg" alt="Nourhan-Ashraf">
                 <hr>
                 <div>
-                    <h5>Norhan Ashraf</h5>
+                    <h5>Nourhan Ashraf</h5>
                 </div>
                 <p>ID:2320961</p>
             </li>

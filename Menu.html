@@ -18,7 +18,7 @@
 
         /* تنسيق الصفحة */
         body {
-            font-family: 'Arial', sans-serif;
+
             margin: 0PX;
             padding: 0PX;
 
@@ -119,18 +119,20 @@
 </head>
 
 <body>
+    <!-- Header -->
     <header>
         <nav class="navbar navbar-expand-lg bg-body-tertiary">
             <div class="container-fluid d-flex">
-                <a class="navbar-brand" href=./index.html"><i class="fa-solid fa-mug-saucer"></i>Palestine Cafe</a>
-                <a class="navbar-toggler" type="a " data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <a class="navbar-brand" href="./index.html"><i class="fa-solid fa-mug-saucer"></i>Palestine Cafe</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
-                </a>
+                </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="./index.html">Home</a>
+                            <a class="nav-link " aria-current="page" href="./index.html">Home</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link active" href="./Menu.html">Menu</a>
@@ -138,6 +140,7 @@
                         <li class="nav-item">
                             <a class="nav-link" href="./About.html">About</a>
                         </li>
+
                         <li class="nav-item">
                             <a class="nav-link" href="./Book-Now.html">Book Now</a>
                         </li>
@@ -145,7 +148,21 @@
                             <a class="nav-link" href="./FAQ.html">FAQ</a>
                         </li>
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" role="a " data-bs-toggle="dropdown"
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Easy Recipes
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="./Drinks.html">Drinks</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="./Desserts.html">Desserts</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
                                 aria-expanded="false">
                                 More
                             </a>
@@ -162,6 +179,7 @@
                                 <li class="nav-item">
                                     <a class="nav-link" href="#">Contact Us</a>
                                 </li>
+
                             </ul>
                         </li>
                         <li class="nav-item dropdown">
@@ -183,6 +201,7 @@
             </div>
         </nav>
     </header>
+
     <main>
         <div class="item">
             <header>
