@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Palestine Cafe</title>
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/menu.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .left {
+            text-align: left;
+            /*النص علي اليسار */
+        }
+
+        /* تنسيق الصفحة */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0PX;
+            padding: 0PX;
+
+        }
+
+        #page {
+            background-color: #342519;
+            color: #fff;
+            padding: 25px;
+            text-align: center;
+
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 36px;
+        }
+
+        /* تنسيق الأقسام (items) */
+        main {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 50px;
+            padding: 50px;
+        }
+
+        .item {
+            background-color: #c1c2ad;
+            /* لون البيج للـ div */
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            position: relative;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        /* خلفية بني وراء الـ div */
+        .item::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: #3e2723;
+            /* اللون البني */
+            z-index: -500;
+            border-radius: 15px;
+            transition: opacity 0.3s ease;
+            opacity: 0.8;
+        }
+
+        .item:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 5px 40px rgba(0, 0, 0, 0.2);
+        }
+
+        .item img {
+            width: 80%;
+            height: auto;
+            border-bottom: 2px solid #C1E8FF;
+            transition: transform 0.3s ease;
+        }
+
+        .item img:hover {
+            transform: scale(1.05);
+        }
+
+        .item header {
+            background-color: #844c44;
+            padding: 15px;
+            color: #d9dcde;
+            text-align: center;
+        }
+
+        .item h2 {
+            margin: 0;
+            font-size: 24px;
+        }
+
+        /* زر "Order it now" */
+        .item a {
+            width: 80%;
+            padding: 10px;
+            background-color: #684f36;
+            color: #fff;
+            border: none;
+            border-radius: 0 0 10px 10px;
+            font-size: 15px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .item a:hover {
+            background-color: #684f36;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid d-flex">
+                <a class="navbar-brand" href="#"><i class="fa-solid fa-mug-saucer"></i>Palestine Cafe</a>
+                <a class="navbar-toggler" type="a " data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </a>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="./Home.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="./Menu.html">Menu</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./About.html">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./Book-Now.html">Book Now</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./FAQ.html">FAQ</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="a " data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                More
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Branch Location</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="./Customer-Reviews.html">Customer Reviews</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">News</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Contact Us</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle user" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                <i class="fa-solid fa-user user"></i>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="./Login.html">Login</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="./Register.html">Creat Account</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="item">
+            <header>
+                <h2>Offers</h2>
+            </header>
+            <img src="assets/imgs/menu/WhatsApp Image 2024-12-28 at 00.58.22_6dd42a86.jpg" alt="Offers">
+            <a href="./page/menu-contant/offers.html">Order it now</a>
+        </div>
+        <div class="item">
+            <header>
+                <h2>Coming Soon</h2>
+            </header>
+            <img src="assets/imgs/menu/WhatsApp Image 2024-12-24 at 17.16.58_c8d3e227.jpg" alt="Coming Soon">
+            <a href="./page/menu-contant/coming_soon.html">Order it now</a>
+        </div>
+        <div class="item">
+            <header>
+                <h2>Most Orders</h2>
+            </header>
+            <img src="assets/imgs/menu/WhatsApp Image 2024-12-24 at 17.11.29_ef4d1e48.jpg" alt="Most Orders">
+            <a href="./page/menu-contant/most_orders.html">Order it now</a>
+        </div>
+        <div class="item">
+            <header>
+                <h2>Hot Drink</h2>
+            </header>
+            <img src="assets/imgs/menu/WhatsApp Image 2024-12-23 at 17.55.18_27bfd58e.jpg" alt="Hot Drink">
+            <a href="./page/menu-contant/hot_drinks.html">Order it now</a>
+        </div>
+
+
+        <div class="item">
+            <header>
+                <h2>Cold Drink</h2>
+            </header>
+            <img src="assets/imgs/menu/WhatsApp Image 2024-12-23 at 17.55.18_7e24913e.jpg" alt="Cold Drink">
+
+            <a href="./page/menu-contant/cold_drinks.html">Order it now</a>
+        </div>
+
+        <div class="item">
+            <header>
+                <h2>Smoothies and Mojitos</h2>
+            </header>
+            <img src="assets/imgs/menu/WhatsApp Image 2024-12-24 at 13.11.58_a1f36dc5.jpg" alt="Refreshing Drinks">
+            <a href="./page/menu-contant/smothie_mojito.html">Order it now</a>
+        </div>
+
+        <div class="item">
+            <header>
+                <h2>Bakery and Sweets</h2>
+            </header>
+            <img src="assets/imgs/menu/WhatsApp Image 2024-12-23 at 18.00.43_c673cfdc.jpg" alt="Bakery and Sweets">
+            <a href="./page/menu-contant/bakery_sweet.html">Order it now</a>
+        </div>
+
+        <div class="item">
+            <header>
+                <h2>Fresh Drinks</h2>
+            </header>
+            <img src="assets/imgs/menu/WhatsApp Image 2024-12-24 at 13.17.31_adbe2ede.jpg" alt="Natural Drinks">
+            <a href="./page/menu-contant/fresh_drinks.html">Order it now</a>
+        </div>
+
+        <div class="item">
+            <header>
+                <h2>Dish Of The Day</h2>
+            </header>
+            <img src="assets/imgs/menu/WhatsApp Image 2024-12-25 at 00.10.58_1965aeee.jpg" alt="Coming Soon">
+            <a href="../page/menu-contant/suggest.html">Order it now</a>
+        </div>
+
+
+
+    </main>
+    <footer>
+        <div>
+            <p> &copy;2024 Palestine Cafe. All rights reserved.</p>
+            <div class="social">
+                <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="#"><i class="fa-brands fa-github"></i></a>
+            </div>
+            <div>
+                <a href="./Customer-Reviews.html">Customer Reviews</a>
+                <a href="./About.html">Our Team</a>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
