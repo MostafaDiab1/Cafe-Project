@@ -372,6 +372,13 @@
     }
 }
 
+@media (max-width:551px) {
+    .Register--title {
+        font-size: 20px;
+    }
+
+}
+
 .color:focus {
     box-shadow: 0 0 .40rem black !important;
     border: none !important;
